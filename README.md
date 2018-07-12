@@ -1,8 +1,8 @@
-# AWS Elastic Beanstalk Template Demo
+# Running Docker applications in AWS Elastic Beanstalk
 
 ## Intro
 
-This is demo for using AWS Elastic Beanstalk configured with CloudFormation. In this demo there are two **public** Web applications created from the same [beanstalk.yml](beanstalk.yml) CloudFormation template. Both will optionally get their own custom domain. SSH access is disabled (create security group for your instances if you want to use SSH).
+This is demo for using AWS Elastic Beanstalk configured with CloudFormation. In this demo there are two **public** Web applications created from the same [beanstalk.yml](beanstalk.yml) CloudFormation template packaged with Docker. Both will optionally get their own custom domain. SSH access is disabled (create security group for your instances if you want to use SSH).
 
 ## Demo App 1
 

@@ -56,7 +56,7 @@ aws_secret_access_key=<insert your secret key here>
 
 ## Customizing Elastic Beanstalk
 
-You can customize Elastic Beanstalk behavior by changing Properties.OptionSettings in [beanstalk.yml(beanstalk.yml) type AWS::ElasticBeanstalk::ConfigurationTemplate resouce block. See all available customization from [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options-general.html).
+You can customize Elastic Beanstalk behavior by changing Properties.OptionSettings in [beanstalk.yml](beanstalk.yml) type `AWS::ElasticBeanstalk::ConfigurationTemplate` resouce block. See all available customization from [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options-general.html).
 
 You probably wan't to
 

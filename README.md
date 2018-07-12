@@ -1,4 +1,4 @@
-# Beanstalk Template Demo
+# AWS Elastic Beanstalk Template Demo
 
 ## Intro
 

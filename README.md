@@ -56,4 +56,11 @@ aws_secret_access_key=<insert your secret key here>
 
 ## Customizing Elastic Beanstalk
 
-You can customize Elastic Beanstalk behavior by changing Properties.OptionSettings in [beanstalk.yml(beanstalk.yml) type AWS::ElasticBeanstalk::ConfigurationTemplate resouce block. See all available customization from [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options-general.html). You probably wan't to assign your instances in private subnets and Load balancer in public subnets. Also in some applications you might want to restrict access by adding [security groups](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html).
+You can customize Elastic Beanstalk behavior by changing Properties.OptionSettings in [beanstalk.yml(beanstalk.yml) type AWS::ElasticBeanstalk::ConfigurationTemplate resouce block. See all available customization from [here](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options-general.html).
+
+You probably wan't to
+
+-   Assign your instances in private subnets and Load balancer in public subnets.
+-   Also in some applications you might want to restrict access by adding [security groups](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html)
+-   Change load balancer to have HTTPS:443 encrypted listener instead of unsecure HTTP:80
+    -   It takes about 3 mouse clicks in [AWS Sertificate Manager](https://console.aws.amazon.com/acm/home) to have trusted certificate for your domain that is always up to date.
